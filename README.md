@@ -1,7 +1,4 @@
-<h1 align="center" >🧛‍♂️ dracula.nvim</h1>
-
-<p align="center"><a href="https://draculatheme.com/">Dracula</a> colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
-
+Dracula colorscheme forked from https://github.com/Mofiqul/dracula.nvim with modified colors from https://github.com/kitten/vim-adventurous
 ![TypeScript and NvimTree](./assets/1.png)
 
 ![Lua](./assets/2.png)
@@ -33,12 +30,12 @@ Install via package manager
 
 ```lua
 -- Using Packer:
-use 'Mofiqul/dracula.nvim'
+use 'shawnonthenet/adventurous.nvim'
 ```
 
 ```vim
 " Using Vim-Plug:
-Plug 'Mofiqul/dracula.nvim'
+Plug 'shawnonthenet/adventurous.nvim'
 ```
 
 ## 🚀 Usage
@@ -50,7 +47,7 @@ vim.cmd[[colorscheme dracula]]
 
 ```vim
 " Vim-Script:
-colorscheme dracula
+colorscheme adventurous
 ```
 
 If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
@@ -61,7 +58,7 @@ If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can a
 require('lualine').setup {
   options = {
     -- ...
-    theme = 'dracula-nvim'
+    theme = 'adventurous-nvim'
     -- ...
   }
 }
@@ -74,9 +71,9 @@ The configuration must be run before `colorscheme` command to take effect.
 If you're using lua
 
 ```lua
-local dracula = require("dracula")
-dracula.setup({
-  -- customize dracula color palette
+local adventurous = require("adventurous")
+adventurous.setup({
+  -- customize adventurous color palette
   colors = {
     bg = "#282A36",
     fg = "#F8F8F2",
@@ -123,9 +120,9 @@ The same works in viml
 
 ```vim
 lua << EOF
-local dracula = require("dracula")
-dracula.setup({
-  -- customize dracula color palette
+local adventurous = require("adventurous")
+adventurous.setup({
+  -- customize adventurous color palette
   colors = {
     bg = "#282A36",
     fg = "#F8F8F2",
@@ -172,7 +169,7 @@ EOF
 ## 🎨 Importing colors for other usage
 
 ```lua
-local colors = require('dracula').colors()
+local colors = require('adventurous').colors()
 ```
 
 This will return the folowing table
