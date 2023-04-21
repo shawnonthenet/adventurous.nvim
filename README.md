@@ -42,7 +42,7 @@ Plug 'shawnonthenet/adventurous.nvim'
 
 ```lua
 -- Lua:
-vim.cmd[[colorscheme dracula]]
+vim.cmd[[colorscheme adventurous]]
 ```
 
 ```vim
@@ -52,7 +52,7 @@ colorscheme adventurous
 
 If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
 
-> Make sure to set theme as 'dracula-nvim' as dracula already exists in lualine built in themes
+> Make sure to set theme as 'adventurous-nvim'
 
 ```lua
 require('lualine').setup {
@@ -109,7 +109,7 @@ adventurous.setup({
   -- overrides the default highlights see `:h synIDattr`
   overrides = {
     -- Examples
-    -- NonText = { fg = dracula.colors().white }, -- set NonText fg to white
+    -- NonText = { fg = adventurous.colors().white }, -- set NonText fg to white
     -- NvimTreeIndentMarker = { link = "NonText" }, -- link to NonText highlight
     -- Nothing = {} -- clear highlight of Nothing
   },
@@ -158,7 +158,7 @@ adventurous.setup({
   -- overrides the default highlights see `:h synIDattr`
   overrides = {
     -- Examples
-    -- NonText = { fg = dracula.colors().white }, -- set NonText fg to white
+    -- NonText = { fg = adventurous.colors().white }, -- set NonText fg to white
     -- NvimTreeIndentMarker = { link = "NonText" }, -- link to NonText highlight
     -- Nothing = {} -- clear highlight of Nothing
   },
